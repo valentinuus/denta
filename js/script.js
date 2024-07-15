@@ -58,7 +58,10 @@ testWebP(function (support) {
 // testWebP
 
 
-const swiper = new Swiper('.swiper', {
+
+const sliderHero = document.querySelector('.hero__swiper');
+
+const heroslider = new Swiper(sliderHero, {
 	pagination: {
 		el: '.swiper-pagination',
 	},
@@ -66,4 +69,65 @@ const swiper = new Swiper('.swiper', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
+});
+
+
+const sliderLicense = document.querySelector('.license__slider');
+
+let licenseSlider = new Swiper(sliderLicense, {
+	slidesPerView: 3,
+	spaceBetween: 16,
+	loop: true,
+	slideClass: 'license-slider__slid',
+	wrapperClass: 'license-slider__wrap',
+	// pagination: {
+	// 	el: '.pag-2',
+	// 	clickable: true,
+	// },
+	navigation: {
+		nextEl: '.license-slide__button-prev',
+		prevEl: '.license-slide__button-next',
+	},
+	// breakpoints: {
+	// 	1160: {
+	// 		slidesPerView: 3,
+	// 	},
+	// 	900: {
+	// 		slidesPerView: 2,
+	// 	},
+	// 	768: {
+	// 		slidesPerView: 1,
+	// 	}
+	// }
+})
+
+
+
+
+const btns = document.querySelectorAll('.license-slider__slid-content');
+const modalOverlay = document.querySelector('.modal-overlay ');
+const modals = document.querySelectorAll('.modal');
+
+btns.forEach((el) => {
+	el.addEventListener('click', (e) => {
+		let path = e.currentTarget.getAttribute('data-path');
+
+		modals.forEach((el) => {
+			el.classList.remove('modal--visible');
+		});
+
+		document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
+		modalOverlay.classList.add('modal-overlay--visible');
+	});
+});
+
+modalOverlay.addEventListener('click', (e) => {
+	console.log(e.target);
+
+	if (e.target == modalOverlay) {
+		modalOverlay.classList.remove('modal-overlay--visible');
+		modals.forEach((el) => {
+			el.classList.remove('modal--visible');
+		});
+	}
 });
