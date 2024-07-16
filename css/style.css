@@ -1207,6 +1207,7 @@ a.services__veneers-link::after {
 .map__form-title {
   margin-bottom: 16px;
   font-size: 24px;
+  font-weight: 400;
 }
 
 .map__form-descr {
