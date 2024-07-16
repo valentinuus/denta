@@ -62,6 +62,7 @@ testWebP(function (support) {
 const sliderHero = document.querySelector('.hero__swiper');
 
 const heroslider = new Swiper(sliderHero, {
+	loop: true,
 	pagination: {
 		el: '.swiper-pagination',
 	},
@@ -80,10 +81,9 @@ let licenseSlider = new Swiper(sliderLicense, {
 	loop: true,
 	slideClass: 'license-slider__slid',
 	wrapperClass: 'license-slider__wrap',
-	// pagination: {
-	// 	el: '.pag-2',
-	// 	clickable: true,
-	// },
+	pagination: {
+		el: '.license-slider__pag',
+	},
 	navigation: {
 		nextEl: '.license-slide__button-prev',
 		prevEl: '.license-slide__button-next',
