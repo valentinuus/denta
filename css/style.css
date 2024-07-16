@@ -932,6 +932,7 @@ a.services__veneers-link::after {
   -ms-grid-column: 3;
   padding-top: 31px;
   grid-area: about__descr_1;
+  max-width: 570px;
 }
 
 .about__descr_2 {
@@ -941,6 +942,7 @@ a.services__veneers-link::after {
   grid-area: about__descr_2;
   -ms-grid-row-align: end;
       align-self: end;
+  max-width: 434px;
 }
 
 .about__img_2 {
