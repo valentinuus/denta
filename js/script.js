@@ -58,7 +58,33 @@ testWebP(function (support) {
 // testWebP
 
 
+//menu
+const burger = document?.querySelector('[data-burger]');
+const nav = document?.querySelector('[data-nav]');
+const navItems = nav?.querySelectorAll('a');
+const body = document.body;
+const header = document?.querySelector('.header');
+const headerHeight = header.offsetHeight;
+console.log(headerHeight)
+document.querySelector(':root').style.setProperty('--header-height', `${headerHeight}px`);
 
+burger?.addEventListener('click', () => {
+	body.classList.toggle('stop-scroll');
+	burger?.classList.toggle('burger--active');
+	nav?.classList.toggle('nav--visible');
+});
+
+navItems.forEach(el => {
+	el.addEventListener('click', () => {
+		body.classList.remove('stop-scroll');
+		burger?.classList.remove('burger--active');
+		nav?.classList.remove('nav--visible');
+	});
+});
+
+
+
+//sliders
 const sliderHero = document.querySelector('.hero__swiper');
 
 const heroslider = new Swiper(sliderHero, {
@@ -76,7 +102,7 @@ const heroslider = new Swiper(sliderHero, {
 const sliderLicense = document.querySelector('.license__slider');
 
 let licenseSlider = new Swiper(sliderLicense, {
-	slidesPerView: 3,
+	slidesPerView: 1,
 	spaceBetween: 16,
 	loop: true,
 	slideClass: 'license-slider__slid',
@@ -85,23 +111,18 @@ let licenseSlider = new Swiper(sliderLicense, {
 		el: '.license-slider__pag',
 	},
 	navigation: {
-		nextEl: '.license-slide__button-prev',
-		prevEl: '.license-slide__button-next',
+		nextEl: '.license-slide__button-next',
+		prevEl: '.license-slide__button-prev',
 	},
-	// breakpoints: {
-	// 	1160: {
-	// 		slidesPerView: 3,
-	// 	},
-	// 	900: {
-	// 		slidesPerView: 2,
-	// 	},
-	// 	768: {
-	// 		slidesPerView: 1,
-	// 	}
-	// }
+	breakpoints: {
+		840: {
+			slidesPerView: 3,
+		},
+		660: {
+			slidesPerView: 2,
+		}
+	}
 })
-
-
 
 
 const btns = document.querySelectorAll('.license-slider__slid-content');
@@ -111,11 +132,9 @@ const modals = document.querySelectorAll('.modal');
 btns.forEach((el) => {
 	el.addEventListener('click', (e) => {
 		let path = e.currentTarget.getAttribute('data-path');
-
 		modals.forEach((el) => {
 			el.classList.remove('modal--visible');
 		});
-
 		document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
 		modalOverlay.classList.add('modal-overlay--visible');
 	});

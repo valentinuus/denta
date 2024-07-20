@@ -13,16 +13,19 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__wrap"><a class="header__logo" href="#"><img src="img/logo/logo.svg" alt="логотип"></a>
-          <nav class="header__nav nav">
+        <div class="header__wrap"><a class="header__logo" href="index.html"><img src="img/logo/logo.svg" alt="логотип"></a>
+          <nav class="header__nav nav" data-nav>
             <ul class="nav__list">
-              <li><a class="nav__link" href="#.html">Услуги и цены</a></li>
+              <li><a class="nav__link" href="pryce.html">Услуги и цены</a></li>
               <li><a class="nav__link" href="#.html">О клинике</a></li>
               <li><a class="nav__link" href="#.html">Лицензии</a></li>
               <li><a class="nav__link" href="#.html">Контакты</a></li>
+              <div class="nav_contacts"><a href="tel:+79119135050">8 (911) 913-50-50</a><a href="mailto:prihodko56@mail.ru">prihodko56@mail.ru
+                  <button class="burger burger_close" aria-label="Открыть меню" aria-expanded="false"></button></a></div>
             </ul>
           </nav>
           <div class="header__phone"><a href="tel:+79119135050">8 (911) 913-50-50</a></div>
+          <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false"><span class="burger__line"></span></button>
         </div>
       </div>
     </header>
@@ -70,17 +73,19 @@
               </svg>
             </div>
           </div>
-          <div class="hero__form container">
+          <div class="hero__form">
             <div class="hero__form-descr">Записаться на консультацию</div>
-            <form class="form" id="form-advert" action="#" method="POST" enctype="multipart/form-data" novalidate>
-              <label class="form__label form__label_name">
-                <input class="input input-name input-name-advert" type="text" data-validate-field="name" name="Имя" placeholder="Имя*">
-              </label>
-              <label class="form__label">
-                <input class="input input-tel" type="tel" data-validate-field="tel" autocomplete="off" name="Телефон" placeholder="Номер телефона*" inputmode="text">
-              </label>
-              <button class="button form-hero__btn">Отправить</button>
-            </form>
+            <div class="form__wrap">
+              <form class="form" id="form-advert" action="#" method="POST" enctype="multipart/form-data" novalidate>
+                <label class="form__label form__label_name">
+                  <input class="input input-name input-name-advert" type="text" data-validate-field="name" name="Имя" placeholder="Имя*">
+                </label>
+                <label class="form__label">
+                  <input class="input input-tel" type="tel" data-validate-field="tel" autocomplete="off" name="Телефон" placeholder="Номер телефона*" inputmode="text">
+                </label>
+                <button class="button form-hero__btn">Отправить</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -103,7 +108,7 @@
               <div class="services__price-title"><span>Полный спектр услуг</span> в одном месте</div>
               <nav class="services__price-nav"> 
                 <ul class="services__price-list"> 
-                  <li class="services__price-item"><a class="services__price-link" href="#">Протезирование зубов</a></li>
+                  <li class="services__price-item"><a class="services__price-link" href="pryce.html#prosthetics">Протезирование зубов</a></li>
                   <li class="services__price-item"><a class="services__price-link" href="#">Хирургия</a></li>
                   <li class="services__price-item"><a class="services__price-link" href="#">Армирование</a></li>
                   <li class="services__price-item"><a class="services__price-link" href="#">Уставновка виниров</a></li>
@@ -123,7 +128,7 @@
             <div class="services__veneers-descr">Процедура, при помощи которой на передние поверхности зубов наносятся тонкие керамические накладки. Они помогают улучшить форму, цвет и выравнивание зубов, а также маскируют различные дефекты. Эта процедура безболезненна и позволяет получить идеальную улыбку</div><a class="services__link-too link-too link-too_dark" href="#"><span>Записаться</span>
               <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.656884 11.9706C1.04741 12.3611 1.68057 12.3611 2.0711 11.9706L9.82703 4.21464C9.8796 4.16207 9.96948 4.1993 9.96948 4.27364L9.96948 10.9735C9.96948 11.5275 10.4196 11.9761 10.9736 11.9741C11.5248 11.9721 11.9706 11.5248 11.9706 10.9735L11.9706 1.35463C11.9706 0.969266 11.6582 0.656868 11.2728 0.656868L1.70346 0.656867C1.12545 0.656867 0.656885 1.12544 0.656885 1.70345C0.656885 2.22685 1.08094 2.65129 1.60435 2.65176L8.36256 2.65781C8.43373 2.65787 8.46932 2.74392 8.419 2.79424L0.656884 10.5564C0.266359 10.9469 0.26636 11.58 0.656884 11.9706Z"></path>
-              </svg></a><img class="services__veneers-img" src="img/veneers.png" alt="">
+              </svg></a><img class="services__veneers-img" src="img/veneers.png" alt=""><span class="span__diz span__diz_veneers">03</span>
           </div>
         </div>
       </section>
@@ -140,7 +145,7 @@
       </section>
       <section class="license">
         <div class="license__wrap container-right">
-          <h3 class="license__title">Лицензии<br>и сертификаты</h3>
+          <h3 class="license__title">Лицензии и&nbsp;сертификаты</h3>
           <div class="license-slide__buttons container container__buttons">
             <button class="license-slide__button-prev"></button>
             <button class="license-slide__button-next"></button>
@@ -149,37 +154,37 @@
             <div class="license-slider__wrap">
               <div class="license-slider__slid">
                 <div class="license-slider__slid-content" data-path="license-1">
-                  <div class="license-slider__slid-title">Лицензия</div>
+                  <div class="license-slider__slid-title">Лицензия 1</div>
                   <div class="license-slider__slid-descr">Добро пожаловать в стоматологическую клинику в самом сердце Санкт-Петербурга! Наша клиника существует уже </div>
                 </div><img class="license-slider__img" src="img/license/temp.jpg" alt="">
               </div>
               <div class="license-slider__slid">
                 <div class="license-slider__slid-content" data-path="license-2">
-                  <div class="license-slider__slid-title">Лицензия</div>
+                  <div class="license-slider__slid-title">Лицензия 2</div>
                   <div class="license-slider__slid-descr">Добро пожаловать в стоматологическую клинику в самом сердце Санкт-Петербурга! Наша клиника существует уже </div>
                 </div><img class="license-slider__img" src="img/license/temp.jpg" alt="">
               </div>
               <div class="license-slider__slid">
                 <div class="license-slider__slid-content" data-path="license-3">
-                  <div class="license-slider__slid-title">Лицензия</div>
+                  <div class="license-slider__slid-title">Лицензия 3</div>
                   <div class="license-slider__slid-descr">Добро пожаловать в  Добро пожаловать в Добро пожаловать в Добро пожаловать встоматологическую клинику в самом сердце Санкт-Петербурга! Наша клиника существует уже </div>
                 </div><img class="license-slider__img" src="img/license/temp.jpg" alt="">
               </div>
               <div class="license-slider__slid">
                 <div class="license-slider__slid-content" data-path="license-1">
-                  <div class="license-slider__slid-title">Лицензия</div>
+                  <div class="license-slider__slid-title">Лицензия 4</div>
                   <div class="license-slider__slid-descr">Добро пожаловать в стоматологическую клинику в самом сердце Санкт-Петербурга! Наша клиника существует уже </div>
                 </div><img class="license-slider__img" src="img/license/temp.jpg" alt="">
               </div>
               <div class="license-slider__slid">
                 <div class="license-slider__slid-content" data-path="license-2">
-                  <div class="license-slider__slid-title">Лицензия</div>
+                  <div class="license-slider__slid-title">Лицензия 5</div>
                   <div class="license-slider__slid-descr">Добро пожаловать в стоматологическую клинику в самом сердце Санкт-Петербурга! Наша клиника существует уже </div>
                 </div><img class="license-slider__img" src="img/license/temp.jpg" alt="">
               </div>
               <div class="license-slider__slid">
                 <div class="license-slider__slid-content" data-path="license-3">
-                  <div class="license-slider__slid-title">Лицензия</div>
+                  <div class="license-slider__slid-title">Лицензия 6</div>
                   <div class="license-slider__slid-descr">Добро пожаловать в стоматологическую клинику в самом сердце Санкт-Петербурга! Наша клиника существует уже </div>
                 </div><img class="license-slider__img" src="img/license/temp.jpg" alt="">
               </div>
