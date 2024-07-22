@@ -2051,4 +2051,20 @@ a.services__veneers-link::after {
     width: 16%;
   }
 }
+@media (max-width: 580px) {
+  .pryce__type-name {
+    width: 74%;
+  }
+  .pryce__type-value {
+    width: 25%;
+  }
+}
+@media (max-width: 420px) {
+  .pryce__type-name {
+    width: 63%;
+  }
+  .pryce__type-value {
+    width: 35%;
+  }
+}
 ._webp .pryce{ background-image: url(../img/bg-pryce.webp); }
