@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Цены на лечение в стоматологической клинике Дента+</title>
     <meta name="description" content="Санкт-Петербургская стоматологическая клиника «Дента+». Терапевтическая стоматология, эндодонтия, зубное протезирование и многое другое.">
     <meta name="keywords" content="стоматология, эндодонтия, керамика, профилактика зубов">
@@ -358,19 +362,19 @@
           </div>
         </div>
       </section>
-      <section class="map">
+      <section class="map" id="map">
         <div class="map__wrap container">
-          <h3 class="map__title map__title_price">Оставьте заявку на сайте<br><span>и мы свяжемся с вами</span></h3>
+          <h3 class="map__title">Оставьте заявку на сайте<br><span>и мы свяжемся с вами</span></h3>
           <div class="map__map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A798292ef31d2e5bb594493bc7343335147281c374f3b06b7368dd4e50b0584fe&amp;source=constructor" width="100%" height="522" frameborder="0"></iframe>
             <div class="map__form">
               <div class="map__form-title">Остались <span>вопросы?</span></div>
               <div class="map__form-descr">Запишитесь на консультацию и мы ответим на все интересующие вопросы</div>
-              <form class="form form-map" id="form-advert" action="#" method="POST" enctype="multipart/form-data" novalidate>
+              <form class="form form-map" id="form-map" action="#" method="POST" enctype="multipart/form-data" novalidate>
                 <label class="form__label form__label_name form-map__label">
-                  <input class="input input-name input-name-advert form-map__input" type="text" data-validate-field="name" name="Имя" placeholder="Имя*">
+                  <input class="input input-name input-name-map form-map__input" type="text" data-validate-field="name" name="Имя" placeholder="Имя*">
                 </label>
                 <label class="form__label form-map__label">
-                  <input class="input input-tel form-map__input" type="tel" data-validate-field="tel" autocomplete="off" name="Телефон" placeholder="Номер телефона*" inputmode="text">
+                  <input class="input input-tel-map form-map__input" type="tel" data-validate-field="tel" autocomplete="off" name="Телефон" placeholder="Номер телефона*" inputmode="text">
                 </label>
                 <button class="button form-map__button">Отправить</button>
               </form>
@@ -396,5 +400,9 @@
       </div>
     </footer>
   </body>
+  <script src="js/libs/inputmask.min.js"></script>
+  <script src="js/libs/just-validate.min.js"></script>
+  <script src="js/form-map.min.js"></script>
+  <script src="js/form-map.min.js"></script>
   <script src="js/script.min.js"></script>
 </html>

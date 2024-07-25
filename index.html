@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Стоматологическая клиника Дента+</title>
     <meta name="description" content="Санкт-Петербургская стоматологическая клиника «Дента+». Терапевтическая стоматология, эндодонтия, зубное протезирование и многое другое.">
     <meta name="keywords" content="стоматология, эндодонтия, керамика, профилактика зубов">
@@ -38,7 +42,7 @@
                 <div class="swiper-slid__text">
                   <div class="swiper-slid__title"><span>Стоматология</span> в центре<br>Санкт-Петербурга</div>
                   <div class="swiper-slid__descr">При обращении к нам вы можете быть уверены, что ваша улыбка будет в надежных руках.</div>
-                </div><img class="swiper-slid__img swiper-slid__img_slid-1" src="img/hero/slid-01.png" alt="Стоматология">
+                </div><img class="swiper-slid__img swiper-slid__img_slid-1" src="img/hero/dentist.png" alt="Врач стоматолог">
               </div>
               <div class="swiper-slide"> 
                 <div class="swiper-slid__text">
@@ -50,7 +54,7 @@
                 <div class="swiper-slid__text">
                   <div class="swiper-slid__title"><span>Имплантация и зубов</span><br>в Санкт-Петербурге</div>
                   <div class="swiper-slid__descr">Имплантация является эффективным и безопасным способом восстановления зубного ряда, который позволяет вернуть пациенту утраченную функциональность и эстетику улыбки.</div>
-                </div><img class="swiper-slid__img swiper-slid__img_slid-3" src="img/hero/slid-03.png" alt="Стоматология">
+                </div><img class="swiper-slid__img swiper-slid__img_slid-3" src="img/hero/dentistry.png" alt="Стоматолок показывает образец">
               </div>
               <div class="swiper-slide"> 
                 <div class="swiper-slid__text">
@@ -76,27 +80,27 @@
           <div class="hero__form">
             <div class="hero__form-descr">Записаться на консультацию</div>
             <div class="form__wrap">
-              <form class="form" id="form-advert" action="#" method="POST" enctype="multipart/form-data" novalidate>
+              <form class="form" action="#" data-jsv="form-1" method="POST" enctype="multipart/form-data">
                 <label class="form__label form__label_name">
-                  <input class="input input-name input-name-advert" type="text" data-validate-field="name" name="Имя" placeholder="Имя*">
+                  <input class="input input-name input-name-advert" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя">
                 </label>
                 <label class="form__label">
-                  <input class="input input-tel" type="tel" data-validate-field="tel" autocomplete="off" name="Телефон" placeholder="Номер телефона*" inputmode="text">
+                  <input class="input input-tel" type="tel" data-validate-field="tel" name="Телефон" placeholder="Номер телефона">
                 </label>
-                <button class="button form-hero__btn">Отправить</button>
+                <button class="button">Отправить</button>
               </form>
             </div>
           </div>
         </div>
       </section>
-      <section class="services" id="pryce">
+      <section class="services">
         <div class="services__wrap container">
           <div class="services__represent-block">
             <h2 class="services__represent-title">Качественные услуги<br><span>по доступным ценам</span></h2>
             <p class="services__represent-descr">Мы ценим своих клиентов и работаем на результат</p>
           </div>
           <div class="services__represent-img"><img src="img/services.jpg" alt="челюсть"></div>
-          <div class="services__service-block">
+          <div class="services__service-block" id="pryce">
             <div class="services__service">
               <div class="services__service-title border-title">Лечение кариеса</div>
               <div class="services__service-descr">Не леченный кариес может привести к разрушению зуба, боли, инфекционным заболеваниям полости рта, проблемам с жеванием и даже потере зуба. Поэтому важно своевременно обратиться к стоматологу для лечения кариеса и сохранения здоровья зубов.</div><a class="services__link-too link-too" href="#"><span>Записаться</span>
@@ -135,10 +139,10 @@
         <div class="about__wrap container">
           <h2 class="about__title">Мы работаем уже<br><span>более 30 лет</span></h2><a class="button services__btn" href="#">Записаться </a>
           <div class="about__content"> 
-            <div class="about__img about__img_1"> <img src="img/about/about-1.jpg" alt=""></div>
+            <div class="about__img about__img_1"> <img src="img/about/brushing.jpg" alt="чистка зубов"></div>
             <div class="about__descr about__descr_1">Добро пожаловать в стоматологическую клинику в самом сердце Санкт-Петербурга! Наша клиника существует уже более 30 лет, за это время мы накопили богатый опыт и преобразили тысячи улыбок. Наша клиника является семейным бизнесом, поэтому мы тщательно следим за качеством оказываемых услуг и своей репутацией. Ценим каждого клиента и стремимся поддерживать дружелюбную и домашнюю атмосферу, чтобы вы с радостью шли на визит к стоматологу.</div>
             <div class="about__descr about__descr_2">Благодаря долголетнему опыту и профессионализму врачей, клиника гарантирует качественное и безопасное лечение для всех членов семьи. Мы понимаем важность здоровья зубов и гарантируем индивидуальный подход к каждому пациенту. Доверьте вашу улыбку профессионалам и ощутите разницу с первого визита!</div>
-            <div class="about__img about__img_2"> <img src="img/about/about-2.jpg" alt=""></div>
+            <div class="about__img about__img_2"> <img src="img/about/dentist.jpg" alt="врач стоматолог"></div>
           </div>
         </div>
       </section>
@@ -199,12 +203,12 @@
             <div class="map__form">
               <div class="map__form-title">Остались <span>вопросы?</span></div>
               <div class="map__form-descr">Запишитесь на консультацию и мы ответим на все интересующие вопросы</div>
-              <form class="form form-map" id="form-advert" action="#" method="POST" enctype="multipart/form-data" novalidate>
+              <form class="form form-map" id="form-map" action="#" data-jsv="form-1" method="POST" enctype="multipart/form-data" novalidate>
                 <label class="form__label form__label_name form-map__label">
-                  <input class="input input-name input-name-advert form-map__input" type="text" data-validate-field="name" name="Имя" placeholder="Имя*">
+                  <input class="input input-name input-name-map form-map__input" type="text" data-validate-field="name" name="Имя" placeholder="Имя*">
                 </label>
                 <label class="form__label form-map__label">
-                  <input class="input input-tel form-map__input" type="tel" data-validate-field="tel" autocomplete="off" name="Телефон" placeholder="Номер телефона*" inputmode="text">
+                  <input class="input input-tel-map form-map__input" type="tel" data-validate-field="tel" autocomplete="off" name="Телефон" placeholder="Номер телефона*" inputmode="text">
                 </label>
                 <button class="button form-map__button">Отправить</button>
               </form>
@@ -259,7 +263,11 @@
       </div>
     </footer>
   </body>
+  <script src="js/libs/inputmask.min.js"></script>
+  <script src="js/libs/just-validate.min.js"></script>
   <script src="js/libs/swiper-bundle.min.js"></script>
-  <script src="js/index-js.js"></script>
+  <script src="js/form-hero.min.js"></script>
+  <script src="js/index.min.js"></script>
+  <script src="js/form-map.min.js"></script>
   <script src="js/script.min.js"></script>
 </html>

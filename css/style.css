@@ -744,8 +744,8 @@ body,
   z-index: -1;
   right: 0;
   bottom: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .swiper-slid__img_slid-1 {
   width: 421px;
@@ -753,14 +753,14 @@ body,
 }
 .swiper-slid__img_slid-2 {
   width: 458px;
-  height: 626px;
+  height: 700px;
   right: -66px;
 }
 .swiper-slid__img_slid-3 {
   width: 577px;
   height: 545px;
-  right: -105px;
-  bottom: -20px;
+  right: -54px;
+  bottom: 0;
 }
 .swiper-slid__img_slid-4 {
   width: 322px;
@@ -867,6 +867,7 @@ body,
 }
 
 .form__label {
+  position: relative;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 276px;
           flex: 0 1 276px;
@@ -878,6 +879,13 @@ body,
   border: 1px solid var(--gray);
   border-radius: 8px;
   height: 34px;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: -22px;
+  left: 12px;
+  font-size: 14px;
 }
 
 @media (max-width: 1025px) {
@@ -909,6 +917,7 @@ body,
   .swiper-slid__img_slid-3 {
     width: 400px;
     height: 390px;
+    right: 0;
   }
   .swiper-slid__img_slid-4 {
     width: 200px;
@@ -928,21 +937,21 @@ body,
     margin-left: 26px;
   }
   .swiper-slid__img_slid-1 {
-    width: 199px;
-    height: 328px;
+    width: 335px;
+    height: 414px;
   }
   .swiper-slid__img_slid-2 {
-    width: 215px;
-    height: 313px;
+    width: 239px;
+    height: 370px;
   }
   .swiper-slid__img_slid-3 {
-    width: 364px;
-    height: 355px;
-    right: -35px;
+    width: 328px;
+    height: 423px;
+    right: -7px;
   }
   .swiper-slid__img_slid-4 {
-    width: 183px;
-    height: 366px;
+    width: 223px;
+    height: 436px;
   }
   .hero__form {
     -ms-flex-wrap: wrap;
@@ -950,28 +959,42 @@ body,
   }
   .hero__form-descr {
     max-width: 960px;
+    margin-bottom: 6px;
+  }
+  .just-validate-error-label {
+    top: -16px;
+    font-size: 13px;
   }
 }
 @media (max-width: 660px) {
+  .swiper {
+    height: 540px;
+  }
   .swiper-slid__img_slid-1 {
-    width: 165px;
-    height: 272px;
+    width: 243px;
+    height: 298px;
   }
   .swiper-slid__img_slid-2 {
     width: 199px;
     height: 291px;
   }
   .swiper-slid__img_slid-3 {
-    width: 239px;
-    height: 232px;
+    width: 300px;
+    height: 284px;
   }
   .swiper-slid__img_slid-4 {
-    width: 101px;
-    height: 204px;
+    width: 154px;
+    height: 309px;
   }
   .swiper-button-next,
   .swiper-button-prev {
     top: calc(100% - 32px);
+  }
+  .swiper-button-next {
+    right: calc(100% - 97px);
+  }
+  .swiper-button-prev {
+    left: 23px;
   }
   .swiper-slid__descr {
     padding-right: 25px;
@@ -1000,7 +1023,7 @@ body,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    row-gap: 12px;
+    row-gap: 20px;
   }
   .hero__form-descr {
     -ms-flex-item-align: start;
@@ -1021,6 +1044,16 @@ body,
     -ms-flex-item-align: stretch;
         -ms-grid-row-align: stretch;
         align-self: stretch;
+  }
+}
+@media (max-width: 4300px) {
+  .swiper-slid__img_slid-4 {
+    height: 259px;
+  }
+}
+@media (max-width: 380px) {
+  .swiper-slid__img_slid-2 {
+    height: 258px;
   }
 }
 .span__diz {
@@ -1062,7 +1095,7 @@ body,
   margin-top: 100px;
   border-radius: 30px;
   max-width: 1100px;
-  height: 416px;
+  padding-bottom: 83%;
   overflow: hidden;
 }
 .services__represent-img img {
@@ -1373,6 +1406,10 @@ a.services__veneers-link::after {
     grid-row: 3/4;
     margin-top: 12px;
   }
+  .about__img_2 img {
+    -o-object-position: center -40px;
+       object-position: center -40px;
+  }
   .about__descr_2 {
     max-width: 100%;
     -ms-grid-column: 1;
@@ -1398,6 +1435,10 @@ a.services__veneers-link::after {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+  .about__img_2 img {
+    -o-object-position: center -18px;
+       object-position: center -18px;
   }
 }
 @media (max-width: 660px) {
@@ -1643,7 +1684,7 @@ a.services__veneers-link::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 16px;
+  row-gap: 25px;
   height: 178px;
 }
 .form-map label {
@@ -1661,6 +1702,10 @@ a.services__veneers-link::after {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   margin-left: 0;
+}
+
+.form-map .just-validate-error-label {
+  top: -17px;
 }
 
 @media (max-width: 1025px) {
