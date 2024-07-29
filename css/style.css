@@ -1978,10 +1978,6 @@ a.services__veneers-link::after {
   padding: 0;
 }
 
-.pryce__type-item:nth-child(odd) {
-  background-color: #e3e3e3;
-}
-
 .pryce__type-item:nth-child(even) {
   background-color: var(--bg);
 }
