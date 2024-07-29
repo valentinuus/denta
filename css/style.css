@@ -555,6 +555,8 @@ body,
   }
   .burger_close {
     position: absolute;
+    width: 35px;
+    height: 35px;
     top: 21px;
     border-radius: 50%;
     background-image: url(../img/svgicons/menu-close.svg);
