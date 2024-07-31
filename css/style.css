@@ -175,7 +175,7 @@ input::placeholder {
 }
 
 .button {
-  padding: 19px 30px;
+  padding: 13px 30px;
   background-color: var(--akcent);
   border: solid 1px var(--akcent);
   color: var(--white);
@@ -1159,7 +1159,7 @@ body,
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
-  padding: 30px 22px;
+  padding: 30px;
   color: var(--white);
   background: var(--akcent);
   border-radius: 30px;
@@ -1183,7 +1183,7 @@ body,
   border-radius: 30px;
   background-color: var(--bg);
   position: relative;
-  padding: 32px 22px;
+  padding: 30px;
   border-radius: 30px;
 }
 
@@ -1239,7 +1239,7 @@ body,
 .services__veneers-block {
   position: relative;
   margin-top: 16px;
-  padding: 30px 22px;
+  padding: 30px;
   border-radius: 30px;
   background: var(--akcent);
   background: var(--bg);
@@ -1311,8 +1311,17 @@ a.services__veneers-link::after {
   .services {
     margin-top: 100px;
   }
+  .services__price-block {
+    padding: 30px 22px;
+  }
   .services__veneers-img {
     opacity: 0.3;
+  }
+  .services__service {
+    padding: 30px 22px;
+  }
+  .services__veneers-block {
+    padding: 30px 22px;
   }
 }
 @media (max-width: 660px) {
