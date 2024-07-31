@@ -254,6 +254,16 @@ input::placeholder {
   fill: var(--dark);
 }
 
+.link-too_dark:hover span {
+  color: var(--akcent);
+}
+.link-too_dark:hover span::after {
+  background-color: var(--akcent);
+}
+.link-too_dark:hover svg {
+  fill: var(--akcent);
+}
+
 .link-too:hover svg {
   rotate: 45deg;
 }
