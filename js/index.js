@@ -2,6 +2,10 @@
 const sliderHero = document.querySelector('.hero__swiper');
 
 const heroslider = new Swiper(sliderHero, {
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: true,
+	},
 	loop: true,
 	pagination: {
 		el: '.swiper-pagination',
@@ -13,30 +17,30 @@ const heroslider = new Swiper(sliderHero, {
 });
 
 
-const sliderLicense = document.querySelector('.license__slider');
+// const sliderLicense = document.querySelector('.license__slider');
 
-let licenseSlider = new Swiper(sliderLicense, {
-	slidesPerView: 1,
-	spaceBetween: 16,
-	loop: true,
-	slideClass: 'license-slider__slid',
-	wrapperClass: 'license-slider__wrap',
-	pagination: {
-		el: '.license-slider__pag',
-	},
-	navigation: {
-		nextEl: '.license-slide__button-next',
-		prevEl: '.license-slide__button-prev',
-	},
-	breakpoints: {
-		840: {
-			slidesPerView: 3,
-		},
-		660: {
-			slidesPerView: 2,
-		}
-	}
-})
+// let licenseSlider = new Swiper(sliderLicense, {
+// 	slidesPerView: 1,
+// 	spaceBetween: 16,
+// 	loop: true,
+// 	slideClass: 'license-slider__slid',
+// 	wrapperClass: 'license-slider__wrap',
+// 	pagination: {
+// 		el: '.license-slider__pag',
+// 	},
+// 	navigation: {
+// 		nextEl: '.license-slide__button-next',
+// 		prevEl: '.license-slide__button-prev',
+// 	},
+// 	breakpoints: {
+// 		840: {
+// 			slidesPerView: 3,
+// 		},
+// 		660: {
+// 			slidesPerView: 2,
+// 		}
+// 	}
+// })
 
 
 const sliderModal = document.querySelectorAll('.modal-swiper');
