@@ -3,7 +3,7 @@ const telSelectorMap = form.querySelector('input[type="tel"]');
 const inputMask = new Inputmask('+7 (999) 999-99-99');
 inputMask.mask(telSelectorMap);
 
-const validation = new JustValidate('form-2');
+const validation = new JustValidate('.form-map');
 
 validation
 	.addField('.input-name', [
