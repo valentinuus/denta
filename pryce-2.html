@@ -40,7 +40,8 @@
     <main class="main">
       <section class="pryce"> 
         <div class="pryce__wrap container">
-          <h2 class="pryce__title pryce__title_lite" id="strengthening">Армирование <span>канала</span></h2>
+          <h2 class="pryce__title" id="strengthening"><span>Терапия</span></h2>
+          <div class="pryce__type">Армирование канала</div>
           <ul class="pryce__type-block">
             <li class="pryce__type-item">
               <div class="pryce__type-name">Анкерный штифт, фиброкор, гласспан</div>
@@ -59,7 +60,7 @@
               <div class="pryce__type-value">3 000&nbsp&#8381</div>
             </li>
           </ul>
-          <h2 class="pryce__title pryce__title_lite"><span>Шинирование</span> подвижных зубов нитью</h2>
+          <div class="pryce__type">Шинирование подвижных зубов нитью</div>
           <ul class="pryce__type-block">
             <li class="pryce__type-item">
               <div class="pryce__type-name">Гласспан (1 зуб)</div>
@@ -78,7 +79,7 @@
               <div class="pryce__type-value">1 200&nbsp&#8381</div>
             </li>
           </ul>
-          <h2 class="pryce__title pryce__title_lite" id="prevention"><span>Профилактика</span></h2>
+          <div class="pryce__type" id="prevention">Профилактика</div>
           <ul class="pryce__type-block">
             <li class="pryce__type-item">
               <div class="pryce__type-name">Обработка слизистой: метрагил дента, холисал, асепта</div>
@@ -121,19 +122,16 @@
               <div class="pryce__type-value">200&nbsp&#8381</div>
             </li>
           </ul>
-          <h2 class="pryce__title pryce__title_lite"><span>Пломбировочные</span> материалы</h2>
+          <h2 class="pryce__title"><span>Пломбировочные</span> материалы</h2>
+          <div class="pryce__type">Цементы двойного отверждения</div>
           <ul class="pryce__type-block">
-            <li class="pryce__type-item pryce__type-item_limpid">
-              <ul class="pryce__type-block pryce__type-block_sub">Цементы двойного отверждения
-                <li class="pryce__type-item">
-                  <div class="pryce__type-name">Билд-ит</div>
-                  <div class="pryce__type-value">1 000&nbsp&#8381</div>
-                </li>
-                <li class="pryce__type-item">
-                  <div class="pryce__type-name">Сапфир</div>
-                  <div class="pryce__type-value">1 000&nbsp&#8381</div>
-                </li>
-              </ul>
+            <li class="pryce__type-item">
+              <div class="pryce__type-name">Билд-ит</div>
+              <div class="pryce__type-value">1 000&nbsp&#8381</div>
+            </li>
+            <li class="pryce__type-item">
+              <div class="pryce__type-name">Сапфир</div>
+              <div class="pryce__type-value">1 000&nbsp&#8381</div>
             </li>
             <li class="pryce__type-item pryce__type-item_limpid">
               <ul class="pryce__type-block pryce__type-block_sub">Витремер
@@ -168,9 +166,11 @@
               </ul>
             </li>
           </ul>
-          <h2 class="pryce__title"><span>Светоотверждаемые</span> материалы</h2>
-          <div class="pryce__type">Эстелайт, Градиа Директ, Харизма</div>
-          <ul class="pryce__type-block"> 
+          <div class="pryce__type">Светоотверждаемые материалы</div>
+          <ul class="pryce__type-block">
+            <li class="pryce__type-item pryce__type-item_limpid">
+              <ul class="pryce__type-block pryce__type-block_sub">Эстелайт, Градиа Директ, Харизма</ul>
+            </li>
             <li class="pryce__type-item">
               <div class="pryce__type-name">Одна поверхность</div>
               <div class="pryce__type-value">3 000&nbsp&#8381</div>
@@ -250,28 +250,29 @@
               <div class="pryce__type-name">Лечение 1го канала кальций-содержащей пастой </div>
               <div class="pryce__type-value">350&nbsp&#8381</div>
             </li>
-          </ul>
-          <div class="pryce__type">Временные пломбы</div>
-          <ul class="pryce__type-block">
-            <li class="pryce__type-item">
-              <div class="pryce__type-name">Клип</div>
-              <div class="pryce__type-value">350&nbsp&#8381</div>
-            </li>
-            <li class="pryce__type-item">
-              <div class="pryce__type-name">Темподент</div>
-              <div class="pryce__type-value">150&nbsp&#8381</div>
-            </li>
-            <li class="pryce__type-item">
-              <div class="pryce__type-name">Септопак</div>
-              <div class="pryce__type-value">600&nbsp&#8381</div>
-            </li>
-            <li class="pryce__type-item">
-              <div class="pryce__type-name">Стомафил</div>
-              <div class="pryce__type-value">400&nbsp&#8381</div>
-            </li>
-            <li class="pryce__type-item">
-              <div class="pryce__type-name">Водный дентин</div>
-              <div class="pryce__type-value">100&nbsp&#8381</div>
+            <li class="pryce__type-item pryce__type-item_limpid">
+              <ul class="pryce__type-block pryce__type-block_sub">Временные пломбы
+                <li class="pryce__type-item">
+                  <div class="pryce__type-name">Клип</div>
+                  <div class="pryce__type-value">350&nbsp&#8381</div>
+                </li>
+                <li class="pryce__type-item">
+                  <div class="pryce__type-name">Темподент</div>
+                  <div class="pryce__type-value">150&nbsp&#8381</div>
+                </li>
+                <li class="pryce__type-item">
+                  <div class="pryce__type-name">Септопак</div>
+                  <div class="pryce__type-value">600&nbsp&#8381</div>
+                </li>
+                <li class="pryce__type-item">
+                  <div class="pryce__type-name">Стомафил</div>
+                  <div class="pryce__type-value">400&nbsp&#8381</div>
+                </li>
+                <li class="pryce__type-item">
+                  <div class="pryce__type-name">Водный дентин</div>
+                  <div class="pryce__type-value">100&nbsp&#8381</div>
+                </li>
+              </ul>
             </li>
           </ul>
           <h2 class="pryce__title"><span>Обтурация</span> корневых каналов</h2>

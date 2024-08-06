@@ -1088,7 +1088,7 @@ body,
     margin-left: 0px;
   }
 }
-@media (max-width: 4300px) {
+@media (max-width: 430px) {
   .swiper-slid__img_slid-4 {
     height: 259px;
   }
