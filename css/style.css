@@ -914,10 +914,11 @@ body,
 }
 
 .just-validate-error-label {
+  max-width: 220px;
   position: absolute;
-  top: -22px;
-  left: 12px;
-  font-size: 14px;
+  top: -18px;
+  left: 2px;
+  font-size: 12px;
 }
 
 @media (max-width: 1025px) {
@@ -991,11 +992,12 @@ body,
   }
   .hero__form-descr {
     max-width: 960px;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
   }
   .just-validate-error-label {
     top: -16px;
-    font-size: 13px;
+    font-size: 12px;
+    left: 1px;
   }
   .button {
     margin-left: 10px;
@@ -1058,7 +1060,7 @@ body,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    row-gap: 12px;
+    row-gap: 17px;
   }
   .hero__form .button {
     margin-top: 12px;
@@ -1759,7 +1761,7 @@ a.services__veneers-link::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 10px;
+  row-gap: 12px;
   height: 178px;
 }
 .form-map label {
@@ -1780,7 +1782,7 @@ a.services__veneers-link::after {
 }
 
 .form-map .just-validate-error-label {
-  top: -17px;
+  top: -14px;
 }
 
 @media (max-width: 1025px) {

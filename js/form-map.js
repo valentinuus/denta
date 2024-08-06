@@ -1,12 +1,12 @@
 const formMap = document.querySelector('#form-map');
-const telSelectorMap = form.querySelector('input[type="tel"]');
-const inputMask = new Inputmask('+7 (999) 999-99-99');
+const telSelectorMap = document.querySelector('.input-tel-map');
+const inputMaskMap = new Inputmask('+7 (999) 999-99-98');
 inputMask.mask(telSelectorMap);
 
-const validation = new JustValidate('.form-map');
+const validationMap = new JustValidate('.form-map');
 
-validation
-	.addField('.input-name', [
+validationMap
+	.addField('.input-name-map', [
 		{
 			rule: 'minLength',
 			value: 2,
@@ -20,11 +20,11 @@ validation
 		{
 			rule: 'required',
 			value: true,
-			errorMessage: 'Введите имя!'
+			errorMessage: 'Введите имя'
 		}
 	])
 	
-	.addField('.input-tel', [
+	.addField('.input-tel-map', [
 		{
 			rule: 'required',
 			value: true,
@@ -50,7 +50,7 @@ validation
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState === 4) {
 				if (xhr.status === 200) {
-					console.log('Отправлено');
+					alert("Ваше сообщение отправлено")
 				}
 			}
 		}

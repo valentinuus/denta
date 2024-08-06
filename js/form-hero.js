@@ -50,7 +50,7 @@ validation
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState === 4) {
 				if (xhr.status === 200) {
-					console.log('Отправлено');
+					alert("Ваше сообщение отправлено")
 				}
 			}
 		}

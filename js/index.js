@@ -2,10 +2,10 @@
 const sliderHero = document.querySelector('.hero__swiper');
 
 const heroslider = new Swiper(sliderHero, {
-	autoplay: {
-		delay: 3000,
-		disableOnInteraction: true,
-	},
+	// autoplay: {
+	// 	delay: 3000,
+	// 	disableOnInteraction: true,
+	// },
 	loop: true,
 	pagination: {
 		el: '.swiper-pagination',
@@ -43,20 +43,20 @@ const heroslider = new Swiper(sliderHero, {
 // })
 
 
-const sliderModal = document.querySelectorAll('.modal-swiper');
+// const sliderModal = document.querySelectorAll('.modal-swiper');
 
-sliderModal.forEach((el) => {
-	let modalSlider = new Swiper(el, {
-		slidesPerView: 1,
-		spaceBetween: 16,
-		slideClass: 'modal-slide',
-		wrapperClass: 'modal-wrapper',
-		navigation: {
-			nextEl: '.modal-button-next',
-			prevEl: '.modal-button-prev',
-		}
-	})
-});
+// sliderModal.forEach((el) => {
+// 	let modalSlider = new Swiper(el, {
+// 		slidesPerView: 1,
+// 		spaceBetween: 16,
+// 		slideClass: 'modal-slide',
+// 		wrapperClass: 'modal-wrapper',
+// 		navigation: {
+// 			nextEl: '.modal-button-next',
+// 			prevEl: '.modal-button-prev',
+// 		}
+// 	})
+// });
 
 
 const btns = document.querySelectorAll('.license-slider__slid-content');
